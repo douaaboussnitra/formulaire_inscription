@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+    <section class="container">
+        <header>formulaire d'inscription</header>
+        <form onsubmit="return onSubmit ()" class="form" name="myform" method="post" action="http://localhost/Création d’un formulaire d’inscription/inscription.php">
+            <div class="input-box">
+                <label>Nom</label>
+                <input  placeholder="boussnitra" name="nom"  type="text">
+            </div>
+            <div class="input-box">
+                <label>Prénom</label>
+                <input  placeholder="douaa" name="prenom" type="text">
+            </div>
+            <div class="input-box">
+                <label>Date de naissance</label>
+                <input  placeholder="" name="date" type="date">
+              </div>
+              <div class="gender-box">
+                <label>Sexe</label>
+                <div class="gender-option">
+                  <div class="gender">
+                    <label for="check-male">Homme</label>
+                    <input checked="" name="gender" id="check-male"  value="m" type="radio">
+                  </div>
+                  <div class="gender">
+                    <label for="check-female">Femme</label>
+                    <input name="gender" id="check-female" value="f" type="radio">
+                  </div>
+                </div>
+              </div>
+              <br>
+              <label for="Classe">Classe</label>
+              <div class="select-box">
+                <select name="classe">
+                  <option hidden=""></option>
+                  <option value="sri1">SRI1</option>
+                  <option value="sri2">SRI2</option>
+                  <option value="dsi1">DSI1</option>
+                  <option value="dsi2">DSI2</option>
+                </select>
+              </div>
+              <div class="input-box">
+                  <label>Email</label>
+                  <input  placeholder="douaa.....@gmail.com"  name="email" type="email">
+                </div>
+                <div class="input-box">
+                  <label>Numéro de téléphone</label>
+                  <input  placeholder="0638181005" name="num" type="telephone">               
+            </div>
+            <div class="column">
+                <div class="input-box">
+                  <label>Numéro de téléphone du père</label>
+                  <input  placeholder="0654..." name="nump" type="telephone">
+                </div>
+                <div class="input-box">
+                  <label>Numéro de téléphone de la mère</label>
+                  <input  placeholder="0765..."  name="numm" type="telephone">
+                </div>              
+            </div>
+                <div class="input-box">
+                  <label> CIN </label>
+                  <input  placeholder="BB223837" name="cin" type="telephone">
+                </div>
+                    <div class="input-box">
+                      <label> Massar  (Identifiant Massar) </label>
+                      <input  placeholder="R1234567" name="masar" type="telephone">
+                    </div>
+            <button type="submit">Submit</button>
+        </form>
+      </section>
+    <script src="inscription.js"></script>
+</body>
+</html>
